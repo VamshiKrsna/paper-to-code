@@ -269,7 +269,7 @@ if __name__ == "__main__":
         model.train()
         return losses
 
-    for step in range(30000):
+    for step in range(10000):
         xb, yb = Helpers().get_batch("train")
         xb, yb = xb.to(device), yb.to(device)
 
